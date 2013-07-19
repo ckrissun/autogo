@@ -411,5 +411,5 @@ func (this *Project) Restart() error {
 
 // getExeFilePath 获得可执行文件路径（项目）
 func (this *Project) getExeFilePath() string {
-    return filepath.Join(this.binAbsolutePath, this.MainFile+binanryFileSuffix)
+    return filepath.Join(this.binAbsolutePath, this.name+binanryFileSuffix)
 }
